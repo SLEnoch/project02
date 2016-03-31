@@ -1,0 +1,118 @@
+html {
+  background: url("http://i280.photobucket.com/albums/kk162/stephanie8561/679a71cd-7316-408b-aa98-aecee4d5f269_zpsvkza1kpo.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body{
+  position:absolute;
+  height:100%;
+  width:100%;
+  margin:0px;
+  font-size:16px;
+  line-height:1.5em;
+  font-family: Franklin Gothic Medium, Franklin Gothic, ITC Franklin Gothic, Arial, sans-serif;
+  text-align: center;
+  transition: all .5s cubic-bezier(.95, .25, .30, .65);
+
+}
+.off{
+background-image: url("http://i280.photobucket.com/albums/kk162/stephanie8561/4ea23186-8575-4833-813b-1ae0cee9eb14_zpsewechj3x.jpg");
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+.wrapper{
+  position:relative;
+  margin-top: 15px;
+  height:50%;
+  width:100%;
+}
+.title{
+  font-weight:300;
+  color: black;
+  background-color: white;
+  font-family: 'Marcellus', serif;
+}
+.dark{
+  background-color:black;
+  color: red;
+  font-family: 'Rock Salt', cursive;
+  outline: solid 2px red;
+}
+.lightSwitch{
+  background:#fff;
+}
+
+.lightTrack{
+  background:#cecece;
+}
+
+.toggle{
+  position:absolute;
+  width:100px;
+  height:50px;
+  top:50%;
+  left:0;
+  right:0;
+  margin:0 auto;
+  text-align:center;
+  z-index:1;
+  border-radius:100px;
+}
+
+.check{
+  height:100%;
+  width:100%;
+  border-radius:50%;
+  cursor:pointer;
+  opacity:0;
+  margin:0px;
+  z-index:2;
+}
+
+.switch{
+  position:absolute;
+  top:5px;
+  left:5px;
+  height:40px;
+  width:40px;
+  border-radius:40px;
+  z-index:-1;
+  transition: all 0.5s cubic-bezier(.95, .25, .30, .65);
+}
+
+.track{
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+  border-radius:50px;
+  z-index:-2;
+  transition: all 0.5s cubic-bezier(.95, .25, .30, .65);
+}
+
+.light{
+  position:absolute;
+  top:-30px;
+  left:0;
+  right:0;
+  margin:0 auto;
+  width:10px;
+  height:10px;
+  border-radius:10px;
+  transition: all 0.5s cubic-bezier(.95, .25, .30, .65);
+}
+
+.move{
+  transform: translate(50px);
+  background:red;
+}
+
+.move + .track{
+  background:black;
+}

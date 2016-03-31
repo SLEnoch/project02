@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Button style referenced from http://codepen.io/mnahmias/pen/XmXymM-->
+
+
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Choose Your Side</title>
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='https://fonts.googleapis.com/css?family=Meddon' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Marcellus' rel='stylesheet' type='text/css'>
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css" type="text/css"  media="screen" />
+
+</head>
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<body>
+  <div class="wrapper">
+  <h1 id="title" class="title">Choose Your Side</h1>
+  <div id="toggle" class="toggle">
+    <input type="checkbox" class="check">
+      <div id="lightSwitch" class="switch lightSwitch"></div>
+      <div class="track lightTrack"></div>
+  </div>
+</div>
+</body>
+
+<script>
+
+  var toggle = document.getElementById('toggle');
+  var lightSwitch = document.getElementById('lightSwitch');
+  var title = document.getElementById('title');
+
+  function backgroundToggle(){
+    document.body.classList.toggle('off');
+    lightSwitch.classList.toggle('move');
+    title.classList.toggle('dark');
+  }
+
+  toggle.onclick = backgroundToggle;
+  </script>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+
+</html>
